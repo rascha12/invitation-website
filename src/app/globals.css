@@ -24,3 +24,13 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Undangan digital: jangan pakai background hitam saat dark mode OS */
+html:has([data-invitation-page]) {
+  background-color: #fef7f9 !important;
+}
+
+html:has([data-invitation-page]) body {
+  background-color: #fef7f9 !important;
+  color: #500724;
+}
